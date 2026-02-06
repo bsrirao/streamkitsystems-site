@@ -2,41 +2,177 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>StreamKit Systems LLC | iOS & Media Streaming Architecture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamKit Systems LLC | High-Performance Media Architecture</title>
+    <meta name="description" content="Specialized software consulting for iOS, macOS, and live streaming infrastructure.">
     <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; line-height: 1.6; max-width: 800px; margin: 0 auto; padding: 2rem; color: #333; }
-        header { border-bottom: 1px solid #eee; padding-bottom: 2rem; margin-bottom: 2rem; }
-        h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
-        .subtitle { color: #666; font-size: 1.2rem; }
-        .contact-box { background: #f9f9f9; padding: 1.5rem; border-radius: 8px; margin-top: 2rem; }
+        :root {
+            --primary-color: #0052cc; /* Enterprise Blue */
+            --secondary-color: #172b4d; /* Deep Navy */
+            --bg-color: #f4f5f7;
+            --text-color: #333;
+            --white: #ffffff;
+            --accent: #0065ff;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background-color: var(--bg-color);
+        }
+
+        /* Hero Section */
+        header {
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: var(--white);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0 0 1rem 0;
+            letter-spacing: -0.5px;
+        }
+
+        header .subtitle {
+            font-size: 1.25rem;
+            opacity: 0.9;
+            font-weight: 300;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* Container */
+        .container {
+            max-width: 900px;
+            margin: -30px auto 0; /* Pulls content up slightly */
+            padding: 0 20px;
+        }
+
+        /* Card Style */
+        .card {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        /* Services Grid */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+
+        .service-item {
+            background: #f9fafc;
+            padding: 1rem;
+            border-radius: 6px;
+            border-left: 4px solid var(--accent);
+        }
+
+        .service-item strong {
+            display: block;
+            color: var(--primary-color);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Contact Section */
+        .contact-info p {
+            margin: 0.5rem 0;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background-color: var(--primary-color);
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-top: 1rem;
+            font-weight: 500;
+        }
+
+        .contact-btn:hover {
+            background-color: var(--secondary-color);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            font-size: 0.9rem;
+        }
     </style>
 </head>
 <body>
+
     <header>
         <h1>StreamKit Systems LLC</h1>
-        <div class="subtitle">Advanced Software Architecture for Live Streaming & Media</div>
+        <div class="subtitle">Engineering the future of live media on Apple Silicon.</div>
     </header>
 
-    <main>
-        <h2>About Us</h2>
-        <p>StreamKit Systems LLC is a specialized software consultancy focused on high-performance media delivery, iOS/macOS engineering, and low-latency video infrastructure.</p>
+    <div class="container">
         
-        <h2>Services</h2>
-        <ul>
-            <li>Custom WebRTC & VideoToolbox implementations</li>
-            <li>Relatime Low-Latency Architecture</li>
-            <li>Metal-based Video Processing</li>
-            <li>Technical Strategy for Media Companies</li>
-        </ul>
-
-        <div class="contact-box">
-            <h3>Contact</h3>
-            <p><strong>Email:</strong> contact@streamkitsystems.com</p>
-            <p><strong>Headquarters:</strong><br>
-            30 N Gould St Ste N<br>
-            Sheridan, WY 82801<br>
-            United States</p>
+        <div class="card">
+            <h2>About Us</h2>
+            <p>StreamKit Systems is a boutique software engineering consultancy specializing in high-performance media architecture. We help technology companies build robust, low-latency video infrastructure for iOS, macOS, and tvOS.</p>
         </div>
-    </main>
+
+        <div class="card">
+            <h2>Core Competencies</h2>
+            <div class="services-grid">
+                <div class="service-item">
+                    <strong>Apple Media Frameworks</strong>
+                    Deep expertise in AVFoundation, VideoToolbox, and CoreMedia for custom player implementations.
+                </div>
+                <div class="service-item">
+                    <strong>Low-Latency Streaming</strong>
+                    Architecture design for LL-HLS and WebRTC integration on mobile devices.
+                </div>
+                <div class="service-item">
+                    <strong>Metal Graphics</strong>
+                    High-performance video processing and rendering pipelines using Metal.
+                </div>
+                <div class="service-item">
+                    <strong>Technical Strategy</strong>
+                    Audit and optimization of existing media stacks for scale and reliability.
+                </div>
+            </div>
+        </div>
+
+        <div class="card contact-info">
+            <h2>Contact</h2>
+            <p><strong>Inquiries:</strong> <a href="mailto:contact@streamkit.systems">contact@streamkit.systems</a></p>
+            <p><strong>Headquarters:</strong></p>
+            <p style="color: #555;">
+                30 N Gould St Ste N<br>
+                Sheridan, WY 82801<br>
+                United States
+            </p>
+            <a href="mailto:contact@streamkit.systems" class="contact-btn">Get in Touch</a>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; 2026 StreamKit Systems LLC. All rights reserved.<br>
+        <span style="font-size: 0.8em; color: #999;">Registered in Wyoming, USA.</span>
+    </footer>
+
 </body>
 </html>
